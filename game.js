@@ -75,6 +75,12 @@ $(".btn").click(function(){
             startOver();
         }
     }
+    else{
+        gameHasStatred = true;
+        setTimeout(function() {
+            nextSequence();
+        }, 1000); 
+    }
 });
 
 function startOver(){
